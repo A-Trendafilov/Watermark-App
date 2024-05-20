@@ -39,3 +39,9 @@ interface for users to customize and enhance their images with watermarks.
     ```bash
    python main.py
    ```
+
+## Screenshots
+
+![Screenshot 1](/screenshot/watermark%201.png)
+![Screenshot 2](/screenshot/watermark%202.png)
+![Screenshot 3](/screenshot/watermark%203.png)
