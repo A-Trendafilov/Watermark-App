@@ -1,22 +1,9 @@
 from PyQt6.QtCore import QRect, Qt
 from PyQt6.QtGui import QColor, QFont, QPainter, QPixmap
-from PyQt6.QtWidgets import (
-    QApplication,
-    QColorDialog,
-    QComboBox,
-    QFileDialog,
-    QFormLayout,
-    QFrame,
-    QHBoxLayout,
-    QLabel,
-    QLineEdit,
-    QMainWindow,
-    QMessageBox,
-    QPushButton,
-    QSlider,
-    QVBoxLayout,
-    QWidget,
-)
+from PyQt6.QtWidgets import (QColorDialog, QComboBox, QFileDialog, QFormLayout,
+                             QFrame, QHBoxLayout, QLabel, QLineEdit,
+                             QMainWindow, QMessageBox, QPushButton, QSlider,
+                             QVBoxLayout, QWidget)
 
 FONTS = [
     "Helvetica",
