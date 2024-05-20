@@ -1,9 +1,22 @@
 from PyQt6.QtCore import QRect, Qt
 from PyQt6.QtGui import QColor, QFont, QPainter, QPixmap
-from PyQt6.QtWidgets import (QApplication, QColorDialog, QComboBox,
-                             QFileDialog, QFormLayout, QFrame, QHBoxLayout,
-                             QLabel, QLineEdit, QMainWindow, QMessageBox,
-                             QPushButton, QSlider, QVBoxLayout, QWidget)
+from PyQt6.QtWidgets import (
+    QApplication,
+    QColorDialog,
+    QComboBox,
+    QFileDialog,
+    QFormLayout,
+    QFrame,
+    QHBoxLayout,
+    QLabel,
+    QLineEdit,
+    QMainWindow,
+    QMessageBox,
+    QPushButton,
+    QSlider,
+    QVBoxLayout,
+    QWidget,
+)
 
 FONTS = [
     "Helvetica",
@@ -104,21 +117,17 @@ class AppWidget(QWidget):
         return combobox
 
     def upload_img(self):
-        # Open file dialog to upload an image file
+
         file, _ = QFileDialog.getOpenFileName(
             None, "Open File", "C:\\", "Image Files (*.png *.jpg *.bmp)"
         )
         if file:
-            # Load the selected image and display it
             self.original_image = QPixmap(file)
             self.image.setPixmap(self.original_image)
             self.image.adjustSize()
-            # new_size = self.original_image.size()
-            # self.window().resize(new_size.width(), new_size.height())
 
     def save_img(self):
         if not self.original_image:
-            # Show warning if no image is loaded
             QMessageBox.warning(None, "Warning", "No image to save.")
             return
 
@@ -222,16 +231,3 @@ class AppLayoutWidget(QWidget):
 
         self.main_layout.addWidget(self.ctrl_frame)
         self.main_layout.addWidget(self.img_frame)
-
-
-def main():
-    app = QApplication([])
-    window = ClientViewWindow()
-    with open("style.css", "r") as file:
-        window.setStyleSheet(file.read())
-    window.show()
-    app.exec()
-
-
-if __name__ == "__main__":
-    main()
