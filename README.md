@@ -42,6 +42,6 @@ interface for users to customize and enhance their images with watermarks.
 
 ## Screenshots
 
-![Screenshot 1](/screenshot/watermark 1.png)
-![Screenshot 2](/screenshot/watermark 2.png)
-![Screenshot 3](/screenshot/watermark 3.png)
+![Screenshot 1](/screenshots/watermark 1.png)
+![Screenshot 2](/screenshots/watermark 2.png)
+![Screenshot 3](/screenshots/watermark 3.png)
